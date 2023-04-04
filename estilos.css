@@ -1,0 +1,90 @@
+nav{
+    font-family:"Bebas neue"; 
+    text-align: center;
+    background-color: white;   
+}
+
+#prompt{
+    align-items: baseline;
+    color: azure;
+}
+
+
+.navlist{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+.navlist a{
+    text-decoration: none;
+    color: black;
+}
+
+.navlist img{
+    width: 100px;
+    height: auto;
+}
+
+.Primeraseccion{
+    font-family: "Roboto";
+    display: flex;
+    justify-content: space-around;
+    margin: 25px;
+}
+
+.Primeraseccion img{
+    border-radius: 25%;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.Imagenes{
+    margin: 25px;
+}
+
+.presentacion{
+    margin: 25px;
+}
+
+
+.slider{
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    display: inline-block;  
+}
+
+
+form{
+    display: block;
+}
+
+label, input, textarea, button {
+    display: block;
+  }
+
+.Imagenes a{
+    font-family: "Anton" ;
+}
+
+.presentacion{
+    font-family: "Varela Round" ;
+    display: flex;
+    align-content: center;
+}
+
+.Titulo{
+    font-family: "Bebas neue";
+    text-align: center;
+}
+
+h4{
+    margin: 0 auto;
+}
+
+#FooterInfo{
+    font-family: "Bebas neue";
+}

@@ -1,183 +1,286 @@
-:root{
-    --color-primario:#F5F5F5;
-    --color-secundario:#E8E2E2;
-    --color-terciario:#F99417;
-    --color-cuarto:#5D3891;
-}
-
-main{
+:root {
+    --color-primario: #F5F5F5;
+    --color-secundario: #E8E2E2;
+    --color-terciario: #F99417;
+    --color-cuarto: #5D3891;
+  }
+  
+  main {
     background-color: var(--color-primario);
-}
-nav{
-    font-family:"Bebas neue"; 
+  }
+  
+  section {
+    display: flex;
+    justify-content: space-around;
+    margin: 25px;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+  }
+  
+  nav {
+    font-family: "Bebas neue";
     text-align: center;
-    background-color:white; 
-}
-
-#prompt{
+    background-color: white;
+  }
+  
+  #prompt {
     align-items: baseline;
-    color:#F99417;
-}
-
-
-.navlist{
+    color: var(--color-terciario);
+  }
+  
+  .navlist {
     display: flex;
     justify-content: space-around;
     align-items: center;
     list-style: none;
- }
-
-.navlist li{
-    margin: 0;  
-}
-
-.navlist a{
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navlist li {
+    margin: 0;
+  }
+  
+  .navlist a {
     text-decoration: none;
     text-align: center;
     color: var(--color-terciario);
-    padding: 8px, 12px, 8px, 12px;
-    font-size:x-large;
+    padding: 8px 12px;
+    font-size: x-large;
     letter-spacing: 0.5vw;
-}
-
-.navlist img{
+  }
+  
+  .navlist img {
     width: 75px;
     height: auto;
-    border-radius: 25% 25%;
-}
-
-section{
-    width: auto;
-    height: 300px;
-}
-
-.Primeraseccion{
-    margin: 0 auto;
-    font-family: "bebas neue";
-    display: flex;
-    justify-content: space-around;
-    margin: 25px;
-    color:var(--color-cuarto);
-
-}
-
-.seccDer{
+    border-radius: 25%;
+  }
+  
+  .seccDer {
     width: 50%;
-    height: auto;
     display: flex;
+    flex-direction: row;
     align-items: center;
+    gap: 30px;
+    padding-left: 5%;
 }
-
-.imagen1{
-    justify-content: start;
-    width: 50%;
+  
+  .imagen1 {
+    width: 100%;
     height: auto;
-}
-
-.texto{
-    justify-content: end;
+  }
+  
+  .texto {
+    width: 100%;
+    margin: 25px 0;
+  }
+  
+  .seccIzq {
     width: 50%;
-}
-
-.seccIzq{
-    width: 50%;
-    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    overflow: hidden;     
-}
-
-.Detalle-de-operación{
+    overflow: hidden;
+  }
+  
+  .Detalle-de-operación {
     height: 100%;
-    box-sizing: border-box;    
-}
-
-form{
-    display:flex;
-    flex-direction:column;
-}
-
-label, select, input {
+    box-sizing: border-box;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+  
+  label,
+  select,
+  input {
     margin: 1%;
     border-radius: 5%;
     font-size: larger;
     padding: 1.5%;
     align-content: center;
- }
-
- label{
-    box-shadow: 3px 0 3px rgba(0,0,0,.03);
- }
-
-select {
+  }
+  
+  label {
+    box-shadow: 3px 0 3px rgba(0, 0, 0, 0.03);
+  }
+  
+  select {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
     background: transparent;
     background-image: url('./Imagenes/Arrow.svg');
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background-size: contain;
     background-position: right center;
     padding-right: 2px;
     border-style: none;
   }
-
- button{
+  
+  button {
     margin-top: 10%;
     border: none;
-    background-color: #F99417;
-    font-size:x-large;
+    background-color: var(--color-terciario);
+    font-size: x-large;
     border-radius: 5%;
- }
-
-
-
-
-.Primeraseccion img{
+  }
+  
+  .Primeraseccion img {
     border-radius: 25%;
-    text-align: center;
-    align-items: center;
     margin: 0 auto;
-}
-
-.Imagenes{
+  }
+  
+  .Imagenes {
     margin: 25px;
-}
-
-.presentacion{
-    margin: 25px;
-}
-
-
-.Imagenes a{
-    font-family: "Anton" ;
-}
-
-.presentacion{
-    font-family: "Varela Round" ;
     display: flex;
     align-content: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    background-color: var(--color-secundario);
+    padding: 25px;
+    border-radius: 5px;
+  }
+  
+  #contenedorCards{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    height: 100%;
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    padding: 25px 0; /* Agrega un espacio entre el contenedor y el borde de la sección */
+    box-sizing: border-box; /* Incluye el padding dentro del ancho del contenedor */
+}
+
+.cardbody{
+    width: 300px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+    padding: 10px;
+    margin: 0 auto; /* Centra horizontalmente la tarjeta */
+}
+
+.presentacion{
+    margin: 25px auto; /* Centra horizontalmente la sección y agrega un espacio vertical */
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en caso de ser necesario */
+    justify-content: center; /* Alinea horizontalmente los elementos */
+    box-sizing: border-box; /* Incluye el padding dentro del ancho de la sección */
+}
+
+.contenedor-presentacion{
+    font-family: "Varela Round" ;
+    gap: 15px;
+    display: flex;
+    box-sizing: border-box; /* Incluye el padding dentro del ancho del contenedor */
+}
+
+.tarjeta{
+    display: inline-block;
+    text-align: center;
+    align-items: start;
+    justify-content: space-around;
+    width: 300px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+    padding: 10px;
+    margin: 0 auto; /* Centra horizontalmente la tarjeta */
+}
+
+.tarjeta img{
+    width: 200px;
+    height: 200px;
+    border-radius: 75%;
+    border: 7px;
+    padding: 5%;
+    border-style: solid;
+    margin: 5%;
+}
+
+.tarjeta p{
+    max-height: 90%;
 }
 
 .Titulo{
     font-family: "Bebas neue";
     text-align: center;
+    margin: 0; /* Elimina el margen superior e inferior */
+    padding: 10px 0; /* Agrega un espacio vertical al título */
 }
 
-.Imagenes{
-    align-content: center;
-    justify-content: space-between;
-}
 h3{
     letter-spacing: 0.5vw;
+    margin: 0; /* Elimina el margen superior e inferior */
 }
 
 h4{
-    margin: 0 auto;
+    margin: 0; /* Elimina el margen superior e inferior */
+    text-align: center;
 }
 
 #FooterInfo{
     font-family: "Bebas neue";
+    text-align: center;
+    color: #F5F5F5;
+    text-shadow: 0.5px 1px 1px var(--color-primario);
+    text-decoration: none;
+    margin: 0;
+}
+
+#FooterInfo a{
+    text-decoration: none;
+    color:#E8E2E2;
+}
+
+
+.footer{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en caso de ser necesario */
+    padding: 5px; 
+    box-sizing: border-box; 
+}
+
+.info{
+    color: var(--color-cuarto);
+    font-size: larger;
+}
+
+.enlace{
+    text-decoration: none;
+    color: var(--color-terciario);
+    font-weight: bold;
+    transition: all 0.2s ease-in-out; /* Agrega una transición suave al hover */
+}
+
+.enlace:hover {
+  color: var(--color-cuarto);
+}
+
+
+
+#social {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+#social img {
+  width: 50px;
+  height: auto;
+  filter: grayscale(100%);
+}
+
+#social img:hover {
+  filter: grayscale(0%);
 }

@@ -1,12 +1,22 @@
+:root{
+    --color-primario:#F5F5F5;
+    --color-secundario:#E8E2E2;
+    --color-terciario:#F99417;
+    --color-cuarto:#5D3891;
+}
+
+main{
+    background-color: var(--color-primario);
+}
 nav{
     font-family:"Bebas neue"; 
     text-align: center;
-    background-color: white;   
+    background-color:white; 
 }
 
 #prompt{
     align-items: baseline;
-    color: azure;
+    color:#F99417;
 }
 
 
@@ -15,24 +25,115 @@ nav{
     justify-content: space-around;
     align-items: center;
     list-style: none;
+ }
+
+.navlist li{
+    margin: 0;  
 }
 
 .navlist a{
     text-decoration: none;
-    color: black;
+    text-align: center;
+    color: var(--color-terciario);
+    padding: 8px, 12px, 8px, 12px;
+    font-size:x-large;
+    letter-spacing: 0.5vw;
 }
 
 .navlist img{
-    width: 100px;
+    width: 75px;
     height: auto;
+    border-radius: 25% 25%;
+}
+
+section{
+    width: auto;
+    height: 300px;
 }
 
 .Primeraseccion{
-    font-family: "Roboto";
+    margin: 0 auto;
+    font-family: "bebas neue";
     display: flex;
     justify-content: space-around;
     margin: 25px;
+    color:var(--color-cuarto);
+
 }
+
+.seccDer{
+    width: 50%;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+.imagen1{
+    justify-content: start;
+    width: 50%;
+    height: auto;
+}
+
+.texto{
+    justify-content: end;
+    width: 50%;
+}
+
+.seccIzq{
+    width: 50%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    overflow: hidden;     
+}
+
+.Detalle-de-operación{
+    height: 100%;
+    box-sizing: border-box;    
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+}
+
+label, select, input {
+    margin: 1%;
+    border-radius: 5%;
+    font-size: larger;
+    padding: 1.5%;
+    align-content: center;
+ }
+
+ label{
+    box-shadow: 3px 0 3px rgba(0,0,0,.03);
+ }
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: transparent;
+    background-image: url('./Imagenes/Arrow.svg');
+    background-repeat:no-repeat;
+    background-size: contain;
+    background-position: right center;
+    padding-right: 2px;
+    border-style: none;
+  }
+
+ button{
+    margin-top: 10%;
+    border: none;
+    background-color: #F99417;
+    font-size:x-large;
+    border-radius: 5%;
+ }
+
+
+
 
 .Primeraseccion img{
     border-radius: 25%;
@@ -50,22 +151,6 @@ nav{
 }
 
 
-.slider{
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    display: inline-block;  
-}
-
-
-form{
-    display: block;
-}
-
-label, input, textarea, button {
-    display: block;
-  }
-
 .Imagenes a{
     font-family: "Anton" ;
 }
@@ -79,6 +164,14 @@ label, input, textarea, button {
 .Titulo{
     font-family: "Bebas neue";
     text-align: center;
+}
+
+.Imagenes{
+    align-content: center;
+    justify-content: space-between;
+}
+h3{
+    letter-spacing: 0.5vw;
 }
 
 h4{

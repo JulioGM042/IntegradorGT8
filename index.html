@@ -52,7 +52,8 @@
           </ul>
           
         </div>
-    </nav>
+      </nav>
+      <h1> GT8 Operaciones inmobiliarias</h1>
     </header>
 
     <main>
@@ -69,25 +70,25 @@
 
         <div class="seccIzq">
               <div class="Detalle-de-operación">
-                  <form>
+                  <form class="buscador">
                       <label for="search-input">Buscar ubicación:</label>
-                      <input type="text" id="search-input" name="search-input" placeholder="Escriba una ubicación" required>
+                      <input type="text" name="search-input" placeholder="Escriba una ubicación" required>
                   
                       <label for="precio">Precio:</label>
-                      <select id="precio" name="precio">
+                       <select id="precio" name="precio">
                           <option value="valor1">0 - 25</option>
                           <option value="valor2">25 - 50</option>
                           <option value="valor3">50 - 75</option>
                           <option value="valor4">75 - 100</option>
-                      </select>
+                        </select>
                     
                       <label for="inmueble">Tipo de inmueble</label>
-                      <select id="inmueble" name="inmueble">
+                       <select id="inmueble" name="inmueble">
                         <option value="Casa">Casa</option>
                         <option value="Departamento">Departamento</option>
                         <option value="PH">PH</option>
                         <option value="Terreno">Terreno</option>
-                      </select>
+                        </select>
                     
                       <button type="submit">Siguiente</button>
                     </form>
@@ -136,29 +137,38 @@
     <section class="CONTACTO">
       <div class="ContactPer">
         <form class="contacto-form">
-            <label for="name">Nombre:</label>
-            <input type="text" id="name" name="name" required>
-          
-            <label for="email">Correo electrónico:</label>
-            <input type="email" id="email" name="email" required>
-          
-            <label for="motivo">Operación</label>
-            <select id="motivo" name="motivo">
-              <option value="venta">Venta</option>
-              <option value="alquiler">Alquiler</option>
-              <option value="inversiones">Inversiones</option>
-            </select>
-          
-            <button type="submit">Siguiente</button>
-          </form>
-        <!-- Campos del Paso 1 -->
+          <ul>
+            <li>
+              <label for="motivo">Nombre y apellido</label>
+              <input type="text" id="name" placeholder="Nombre y apellido" name="name" required>           
+            </li>
+            <li>
+              <label for="motivo">Email</label>
+              <input type="email" id="email" placeholder="Email" name="email" required>
+            </li>
+            <li>
+              <label for="motivo">Operación</label>
+              <select id="motivo" name="motivo">
+                <option value="venta">Venta</option>
+                <option value="alquiler">Alquiler</option>
+                <option value="inversiones">Inversiones</option>
+              </select>
+            </li>
+            <li>
+              <textarea name="name" rows="10" cols="80">Mensaje</textarea>
+            </li>
+            <li>
+              <button class="Enviarbtn" type="submit">Enviar</button>
+            </li>
+          </ul>
+        </form>
     </div>
 
     </section>
     <script src="./script.js" type="text/javascript"></script>
 </body>
 
-<footer class="bg-dark bg-gradient">
+<footer id="footer" class="bg-dark bg-gradient">
     <section class="foo-bottom">
         <div id="FooterInfo" class="row d-flex flex-wrap justify-content-around align-items-center py-3  border-top mx-auto">
               <div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 text-center">

@@ -4,15 +4,29 @@
     --color-terciario: #F99417;
     --color-cuarto: #5D3891;
   }
+
+  body, header, main{
+    width: 100%;
+  }
   
+  h1 {
+    font-family: "Bebas neue";
+    text-align: center;
+    background-color: white;
+    letter-spacing: 2vw;
+    color: var(--color-terciario);
+    text-shadow: 3px 3px var(--color-secundario);
+  }
+
   main {
     background-color: var(--color-primario);
+    width: 100%;
   }
   
   section {
     display: flex;
     justify-content: space-around;
-    margin: 25px;
+    margin: 15px;
     flex-wrap: wrap;
     box-sizing: border-box;
   }
@@ -21,6 +35,7 @@
     font-family: "Bebas neue";
     text-align: center;
     background-color: white;
+    width: 100%;
   }
   
   #prompt {
@@ -85,20 +100,20 @@
   }
   
   .Detalle-de-operación {
+    width: auto;
     height: 100%;
     box-sizing: border-box;
   }
   
-  form {
+  .buscador {
     display: flex;
     flex-direction: column;
     margin: 0;
-    padding: 0;
+    padding: 1%;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
   }
   
-  label,
-  select,
-  input {
+  .buscador label,  select, input {
     margin: 1%;
     border-radius: 5%;
     font-size: larger;
@@ -136,6 +151,11 @@
     margin: 0 auto;
   }
   
+  .Titulo{
+    text-align: center;
+    width: 100%;
+  }
+
   .Imagenes {
     margin: 25px;
     display: flex;
@@ -225,6 +245,55 @@ h3{
 h4{
     margin: 0; /* Elimina el margen superior e inferior */
     text-align: center;
+}
+
+.CONTACTO{
+  width: 100%;
+  background-color:#E8E2E2;
+}
+
+.ContactPer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contacto-form ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.contacto-form li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.contacto-form label {
+  flex-basis: 50%;
+  text-align: left;
+}
+
+.contacto-form input[type="text"],
+.contacto-form input[type="email"],
+.contacto-form select {
+  flex-basis: 60%;
+  width: 100%;
+  background-color: var(--color-primario);
+  border-style: none;
+  border-radius: 25px;
+}
+
+.Enviarbtn{
+  margin-top: 1%;;
+  width: 100%;
+}
+
+#Footer{
+  width: 100%;
 }
 
 #FooterInfo{

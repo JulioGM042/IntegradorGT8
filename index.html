@@ -28,7 +28,7 @@
           </div>
           <div class="subscribite-email">
             <form>
-              <input type="email" class="sub-email-area" name="email" placeholder="SUSCRIBITE ACÁ" required="required">
+              <input id="sub-email-area" type="email" class="sub-email-area" name="email" placeholder="SUSCRIBITE ACÁ" required="required">
             </form>            
           </div>
         </div> 
@@ -36,21 +36,21 @@
         <div class="row2">
           <ul class="navlist">
             <li>
-              <a href="">Link 1</a>
+              <a id="a1" href="">Home</a>
             </li>
             <li>
-              <a href="">Link 2</a>
+              <a Id="a1" href="#PropDestacadas">Propiedades destacadas</a>
             </li>
             <li>
               <a href="">
-                <img src="https://png.pngtree.com/element_our/sm/20180413/sm_5ad0c062c709e.jpg" alt="">
+                <img src="./Imagenes/IconPcpal.svg" alt="">
               </a>
             </li>
             <li>
-              <a href="">Link 3</a>
+              <a Id="a1" href="#Contacto">Contactanos</a>
             </li>
             <li>
-              <a href="">Link 4</a>
+              <a Id="a1" href="">Trabaja con nosotros</a>
             </li>
           </ul>
           
@@ -74,8 +74,8 @@
         <div class="seccIzq">
               <div class="Detalle-de-operación">
                   <form class="buscador">
-                      <label for="search-input">Buscar ubicación:</label>
-                      <input type="text" name="search-input" placeholder="Escriba una ubicación" required>
+                      <label for="searchinput">Buscar ubicación:</label>
+                      <input type="text" name="searchinput" placeholder="Escriba una ubicación" required>
                   
                       <label for="precio">Precio:</label>
                        <select id="precio" name="precio">
@@ -99,7 +99,7 @@
         </div>
     </section>
 
-    <section class="Imagenes">
+    <section id="PropDestacadas" class="Imagenes">
       <div class="Titulo">
         <h2><strong>Propiedades destacadas</strong></h2>
       </div>
@@ -135,16 +135,12 @@
     </section>
     </main> 
 
-    <section class="CONTACTO">
+    <section id="Contacto" class="Contacto">
       <div class="ContactPer">
         <div class="contacper-izq">
           <div class="titulo-text">
             <h3><strong>Escribinos</strong></h3>
-          </div>
-          <div class="descrp-text">
-            <p>Te responderemos a la brevedad</p>
-          </div>
-          
+          </div>         
         </div>
 
         <div class="contacper-der">
@@ -168,7 +164,7 @@
               </li>
               <li>
                 <label for="mensaje">Tu mensaje aqui</label>
-                <textarea name="mensaje" rows="5" cols="80" placeholder="Mensaje"></textarea>
+                <textarea name="mensaje" rows="5" cols="43" placeholder="Mensaje"></textarea>
               </li>
               <li>
                 <button id="Enviarbtn" class="Enviarbtn" type="submit">Enviar</button>

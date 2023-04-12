@@ -16,6 +16,8 @@
     letter-spacing: 1vw;
     color: var(--color-terciario);
     text-shadow: 3px 3px var(--color-secundario);
+    margin: 0 auto;
+    padding: 5px;
   }
 
   main {
@@ -82,12 +84,17 @@
     justify-content: space-around;
     align-items: center;
     list-style: none;
-    margin: 0;
-    padding: 0;
+    margin: 1px;
+    padding: 3px;
   }
   
   .navlist li {
     margin: 0;
+  }
+
+#a1:hover {
+    text-shadow: 1px 1px #000000;
+    border-bottom: solid 1px #5D3891;
   }
   
   .navlist a {
@@ -98,10 +105,10 @@
     font-size: x-large;
     letter-spacing: 0.2vw;
   }
-  
-  .navlist img {
-    width: 75px;
-    height: auto;
+
+ .navlist img {
+    height: 75px;
+    width: auto;
     border-radius: 25%;
   }
   
@@ -109,7 +116,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 15px;
     padding-left: 3%;
 }
@@ -143,9 +150,8 @@
     display: flex;
     flex-direction: column;
     margin: 0;
-    padding: 1%;
-    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
-    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);    
   }
   
   .buscador label,  select, input {
@@ -154,10 +160,6 @@
     font-size: larger;
     padding: 5px 5px 5px 15px ;
     align-content: center;
-  }
-  
-  label {
-    box-shadow: 3px 0 3px rgba(0, 0, 0, 0.03);
   }
   
   select {
@@ -171,6 +173,7 @@
     background-position: right center;
     padding-right: 2px;
     border-style: none;
+    border-bottom: solid 1px var(--color-cuarto);
   }
   
   button {
@@ -179,6 +182,11 @@
     background-color: var(--color-terciario);
     font-size: x-large;
     border-radius: 25px;
+  }
+
+  button:hover{
+    box-shadow: 0 0px 2px 2px var(--color-terciario);
+    color: var(--color-primario);
   }
   
   .Primeraseccion img {
@@ -222,6 +230,14 @@
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
     padding: 10px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cardbody img{
+  max-width: 100%;
 }
 
 .cardbody p{
@@ -290,13 +306,14 @@ h4{
     letter-spacing: 3px;
 }
 
-.CONTACTO{
+.Contacto{
+  font-family: "Varela Round" ;
   width: 100%;
   background-color:#E8E2E2;
 }
 
 .ContactPer {
-  display: flex;
+  display:inline-block;
   flex-wrap: wrap;
   width: 100%;
   justify-content: space-around;
@@ -304,19 +321,32 @@ h4{
 
 .contacper-izq {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-content: center;
+  
 }
 
-.contactper-der{
-  margin: 0 auto;
+.titulo-text{
+  padding: 15px 0 0 0;
+  
+}
+
+.contacper-der {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+} 
+
+.contacto-form{
+ width: 50%;
+ justify-content: center;
+ border-top: solid 1px var(--color-cuarto);
 }
 
 .contacto-form ul {
   list-style: none;
   margin: 0 auto;
-  padding: 25px;
+  padding: 5px 0 25px 0;
 }
 
 .contacto-form li {
@@ -328,13 +358,15 @@ h4{
 }
 
 .contacto-form label {
-  flex-basis: 50%;
-  text-align: left;
+  flex-basis: 40%;
+  text-align: leftt;
+  padding: 25px;
 }
 
 .contacto-form input[type="text"],
 .contacto-form input[type="email"],
-.contacto-form select {
+.contacto-form select,
+.contacto-form textarea {
   flex-basis: 60%;
   width: 100%;
   background-color: var(--color-primario);
@@ -350,6 +382,12 @@ h4{
 
 #Footer{
   width: 100%;
+  display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en caso de ser necesario */
+    padding: 5px; 
+    box-sizing: border-box; 
 }
 
 #FooterInfo{
@@ -370,46 +408,3 @@ h4{
     color:#E8E2E2;
 }
 
-
-.footer{
-    display: flex;
-    justify-content:space-around;
-    align-items: center;
-    flex-wrap: wrap; /* Permite que los elementos se ajusten en caso de ser necesario */
-    padding: 5px; 
-    box-sizing: border-box; 
-}
-
-.info{
-    color: var(--color-cuarto);
-    font-size: larger;
-}
-
-.enlace{
-    text-decoration: none;
-    color: var(--color-terciario);
-    font-weight: bold;
-    transition: all 0.2s ease-in-out; /* Agrega una transición suave al hover */
-}
-
-.enlace:hover {
-  color: var(--color-cuarto);
-}
-
-
-
-#social {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-}
-
-#social img {
-  width: 50px;
-  height: auto;
-  filter: grayscale(100%);
-}
-
-#social img:hover {
-  filter: grayscale(0%);
-}

@@ -48,5 +48,14 @@ const contenedorHTML = document.getElementById("contenedorCards")
       emailInpt.value = ""; // borra el campo de entrada de correo electrónico
     }
   });
+
+  const btnBuscador = document.getElementById("Buscarbtn")
+    btnBuscador.addEventListener("click", () =>{
+      Swal.fire({
+        title: 'Estamos buscando tus opciones. Esta operación puede demorar unos segundos',
+        color:'#F99417',
+        background: '#E8E2E2',
+      })
+  })
   
   

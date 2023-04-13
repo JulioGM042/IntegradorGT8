@@ -8,7 +8,7 @@
   body, header, main{
     width: 100%;
   }
-  
+
   h1 {
     font-family: "Bebas neue";
     text-align: center;
@@ -22,7 +22,7 @@
     background-color: var(--color-primario);
     width: 100%;
   }
-  
+
   section {
     display: flex;
     justify-content: space-around;
@@ -30,14 +30,14 @@
     flex-wrap: wrap;
     box-sizing: border-box;
   }
-  
+
   nav {
     font-family: "Bebas neue";
     text-align: center;
     background-color: white;
     width: 100%;
   }
-  
+
   #prompt {
     display: flex;
     justify-content: space-between;
@@ -55,11 +55,11 @@
   box-sizing: border-box;
   align-self: center;
   text-align: end;
-}  
+}
 
 .prompt-texto p{
   margin: 0 auto;
-} 
+}
 
 .subscribite-email{
   width: 50%;
@@ -76,7 +76,7 @@
   font-size: 15px;
   padding: 10px;
 }
-  
+
   .navlist {
     display: flex;
     justify-content: space-around;
@@ -85,11 +85,11 @@
     margin: 0;
     padding: 0;
   }
-  
+
   .navlist li {
     margin: 0;
   }
-  
+
   .navlist a {
     text-decoration: none;
     text-align: center;
@@ -98,13 +98,13 @@
     font-size: x-large;
     letter-spacing: 0.2vw;
   }
-  
+
   .navlist img {
     width: 75px;
     height: auto;
     border-radius: 25%;
   }
-  
+
 .seccDer {
     display: flex;
     flex-direction: row;
@@ -113,18 +113,18 @@
     gap: 15px;
     padding-left: 3%;
 }
-  
+
   .imagen1 {
     width: 100%;
     height: auto;
   }
-  
+
   .texto {
     width: 100%;
     margin: 25px 0;
     font-family: 'Josefin Sans', sans-serif;
   }
-  
+
   .seccIzq {
     display: flex;
     align-items: center;
@@ -132,13 +132,13 @@
     box-sizing: border-box;
     overflow: hidden;
   }
-  
+
   .Detalle-de-operación {
     width: 300px;
     height: 100%;
     box-sizing: border-box;
   }
-  
+
   .buscador {
     display: flex;
     flex-direction: column;
@@ -147,7 +147,7 @@
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
     border-radius: 15px;
   }
-  
+
   .buscador label,  select, input {
     margin: 1%;
     border-radius: 15px;
@@ -155,11 +155,11 @@
     padding: 5px 5px 5px 15px ;
     align-content: center;
   }
-  
+
   label {
     box-shadow: 3px 0 3px rgba(0, 0, 0, 0.03);
   }
-  
+
   select {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -172,7 +172,7 @@
     padding-right: 2px;
     border-style: none;
   }
-  
+
   button {
     margin-top: 10%;
     border: none;
@@ -180,12 +180,12 @@
     font-size: x-large;
     border-radius: 25px;
   }
-  
+
   .Primeraseccion img {
     border-radius: 25%;
     margin: 0 auto;
   }
-  
+
   .Titulo{
     text-align: center;
     width: 100%;
@@ -203,16 +203,16 @@
     border-radius: 5px;
     font-family: "bebas neue";
   }
-  
+
   #contenedorCards{
     display: flex;
     justify-content: center;
     gap: 15px;
     flex-wrap: wrap;
     height: 100%;
-    margin: 0 auto; 
-    padding: 25px; 
-    box-sizing: border-box; 
+    margin: 0 auto;
+    padding: 25px;
+    box-sizing: border-box;
 }
 
 .cardbody{
@@ -229,19 +229,19 @@
 }
 
 .presentacion{
-    margin: 0 auto; 
+    margin: 0 auto;
     display: flex;
-    align-items: center; 
-    flex-wrap: wrap; 
-    justify-content: center; 
-    box-sizing: border-box; 
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-sizing: border-box;
 }
 
 .contenedor-presentacion{
     font-family: "Varela Round" ;
     gap: 15px;
     display: flex;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 .tarjeta{
@@ -274,20 +274,23 @@
 .Titulo{
     font-family: "Bebas neue";
     text-align: center;
-    margin: 0; 
-    padding: 10px 0; 
+    margin: 0;
+    padding: 10px 0;
 }
 
 h3{
     letter-spacing: 0.5vw;
-    margin: 0; 
+    margin: 0;
+    padding-top: 10px;
+    align-items: center;
 }
 
 h4{
-    margin: 0; 
+    margin: 0;
     text-align: center;
     font-family: "bebas neue";
     letter-spacing: 3px;
+    
 }
 
 .CONTACTO{
@@ -376,8 +379,8 @@ h4{
     justify-content:space-around;
     align-items: center;
     flex-wrap: wrap; /* Permite que los elementos se ajusten en caso de ser necesario */
-    padding: 5px; 
-    box-sizing: border-box; 
+    padding: 5px;
+    box-sizing: border-box;
 }
 
 .info{

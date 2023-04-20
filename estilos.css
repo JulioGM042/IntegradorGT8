@@ -62,6 +62,7 @@
   box-sizing: border-box;
   align-self: center;
   text-align: end;
+  color: var(--color-terciario);
 }
 
 .subscrip-texto p{

@@ -10,9 +10,9 @@
     100%{opacity: 1;}
   }
 
-  body, header, main{
-    width: 100%;
-  }
+body{
+  width: 100%;
+}
 
   h1 {
     font-family: "Bebas neue";
@@ -25,9 +25,8 @@
     padding: 25px;
   }
 
-  main {
-    background-color: var(--color-primario);
-    width: 100%;
+  body{
+    margin: 0 auto;
   }
 
   section {
@@ -45,7 +44,7 @@
     width: 100%;
   }
 
-  #prompt {
+  #subscripcion {
     display: flex;
     justify-content: space-between;
     align-content: center;
@@ -71,7 +70,7 @@
 
 .subscribite-email{
   width: 50%;
-  box-sizing: border-box;
+  box-sizing:border-box;
 }
 
 .subscribite-email form{
@@ -92,6 +91,7 @@
     list-style: none;
     margin: 1px;
     padding: 3px;
+    width: 100%;
 }
   
   .navlist li {
@@ -120,7 +120,7 @@
 
 .seccDer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
     gap: 15px;
